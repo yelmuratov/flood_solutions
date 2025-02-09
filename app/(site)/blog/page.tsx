@@ -18,6 +18,7 @@ const BlogPage = async () => {
   }catch(e){
     console.error(e);
   }
+
   return (
     <>
       {/* <!-- ===== Blog Grid Start ===== --> */}
@@ -30,7 +31,6 @@ const BlogPage = async () => {
           </div>
         </div>
       </section>
-      {/* <!-- ===== Blog Grid End ===== --> */}
     </>
   );
 };
