@@ -27,7 +27,7 @@ export const BlogService = {
                     }
                 }
             }
-        `;
+        `; 
         const result = await request<{blogs:IBlog[]}>(graphqlAPI, query);
         return result.blogs;
     },
