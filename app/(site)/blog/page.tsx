@@ -36,4 +36,3 @@ const BlogPage = async () => {
 };
 
 export default BlogPage;
-export const revalidate = 30;
