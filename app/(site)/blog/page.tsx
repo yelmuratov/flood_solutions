@@ -15,7 +15,6 @@ const BlogPage = async () => {
 
   try{
     blogs = await BlogService.getBlogs();
-    console.log(blogs.length, 'blogs');
   }catch(e){
     console.error(e);
   }
@@ -37,3 +36,4 @@ const BlogPage = async () => {
 };
 
 export default BlogPage;
+export const revalidate = 30;
