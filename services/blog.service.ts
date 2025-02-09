@@ -1,6 +1,5 @@
 import { IBlog, ICategory } from '@/types/blog';
 import {gql,request} from 'graphql-request';
-import { cache } from 'react';
 
 const graphqlAPI = process.env.NEXT_PUBLIC_HYGRAPH_ENDPOINT as string;
 
@@ -29,7 +28,7 @@ export const BlogService = {
                 }
             }
         `; 
-        const result = await request<{blogs:IBlog[]}>(graphqlAPI, query, {}, { cache: "no-store" });
+        const result = await request<{blogs:IBlog[]}>(graphqlAPI, query);
         return result.blogs;
     },
 
@@ -54,7 +53,7 @@ export const BlogService = {
             }
             }
         `;
-        const result = await request<{blogs:IBlog[]}>(graphqlAPI, query, {}, { cache: "no-store" });
+        const result = await request<{blogs:IBlog[]}>(graphqlAPI, query);
         return result.blogs;
     },
 
@@ -83,7 +82,7 @@ export const BlogService = {
             }
             }
         `;
-        const result = await request<{blog:IBlog}>(graphqlAPI, query,{slug},{ cache: "no-store" });
+        const result = await request<{blog:IBlog}>(graphqlAPI, query,{slug});
         return result.blog;
     },
     async getCategories(){
@@ -95,7 +94,7 @@ export const BlogService = {
         }
         }
         `;
-        const result = await request<{categories:ICategory[]}>(graphqlAPI, query, {}, { cache: "no-store" });
+        const result = await request<{categories:ICategory[]}>(graphqlAPI, query);
         return result.categories
     }
 }
