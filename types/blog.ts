@@ -18,16 +18,28 @@ export type Blog = {
   publishedAt?: string;
 };
 
-export interface IBlog{
-      excerpt:string;
-      createdAt:string
-      slug:string
-      title:string
-      image: {
-        url:string
-      }
-      id:string
-      author:{
-        name:string
-      }
+export interface IBlog {
+  excerpt: string;
+  createdAt: string;
+  slug: string;
+  title: string;
+  image: { url: string }[];
+  id: string;
+  author: {
+    name: string;
+    avatar: {
+      url: string;
+    };
+  };
+  description:{
+    html:string;
+  },
+  category:{
+    label:string;
+  }
+}
+
+export interface ICategory{
+  label:string;
+  slug:string;
 }

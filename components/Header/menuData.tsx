@@ -21,7 +21,7 @@ const menuData: Menu[] = [
   },
   {
     id: 4,
-    title: "Bog'lanish",
+    title: "Yordam",
     newTab: false,
     path: "/support",
   },

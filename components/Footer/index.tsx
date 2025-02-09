@@ -1,11 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useState } from "react";
 
 const Footer = () => {
-  const [activeNav, setActiveNav] = useState("");
-
   return (
     <>
       <footer className="border-t border-stroke bg-white dark:border-strokedark dark:bg-blacksection">
@@ -48,11 +45,14 @@ const Footer = () => {
                   />
                 </a>
 
-                <p className="mb-10 mt-5 text-lightblue-500">
-                  <a href="https://t.me/Flood_Solutions_support" target="_blank" rel="noopener noreferrer" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">
-                  Telegram oraqli bog'lanish
+                <p className="mb-10 mt-5">
+                  <a href="https://t.me/BahodirBuxoriy" target="_blank" rel="noopener noreferrer">
+                    Telegram:
+                    @BahodirBuxoriy
                   </a>
                 </p>
+
+
                 <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
                   Biz bilan aloqa
                 </p>
@@ -92,8 +92,7 @@ const Footer = () => {
                     <li>
                       <a
                         href="#"
-                        className={`mb-3 inline-block hover:text-primary ${activeNav === "home" ? "text-primary" : ""}`}
-                        onClick={() => setActiveNav("home")}
+                        className="mb-3 inline-block hover:text-primary"
                       >
                         Bosh sahifa
                       </a>
@@ -101,8 +100,7 @@ const Footer = () => {
                     <li>
                       <a
                         href="#"
-                        className={`mb-3 inline-block hover:text-primary ${activeNav === "features" ? "text-primary" : ""}`}
-                        onClick={() => setActiveNav("features")}
+                        className="mb-3 inline-block hover:text-primary"
                       >
                         Xizmatlar
                       </a>
@@ -110,8 +108,7 @@ const Footer = () => {
                     <li>
                       <a
                         href="#"
-                        className={`mb-3 inline-block hover:text-primary ${activeNav === "careers" ? "text-primary" : ""}`}
-                        onClick={() => setActiveNav("careers")}
+                        className="mb-3 inline-block hover:text-primary"
                       >
                         Careers
                       </a>
@@ -119,8 +116,7 @@ const Footer = () => {
                     <li>
                       <a
                         href="#"
-                        className={`mb-3 inline-block hover:text-primary ${activeNav === "blog" ? "text-primary" : ""}`}
-                        onClick={() => setActiveNav("blog")}
+                        className="mb-3 inline-block hover:text-primary"
                       >
                         Blog
                       </a>
@@ -147,7 +143,7 @@ const Footer = () => {
                   className="animate_top"
                 >
                   <h4 className="mb-9 text-itemtitle2 font-medium text-black dark:text-white">
-                    Bog'lanish
+                    Yordam
                   </h4>
 
                   <ul>

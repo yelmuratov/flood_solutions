@@ -26,13 +26,13 @@ const CTA = () => {
               whileInView="visible"
               transition={{ duration: 1, delay: 0.1 }}
               viewport={{ once: true }}
-              className="animate_left md:w-[70%] lg:w-1/2 py-12"
+              className="animate_left md:w-[70%] lg:w-1/2"
             >
               <h2 className="mb-4 w-11/12 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle4">
-                FLOOD SOLUTIONS bilan hoziroq hamkorlikni boshlang va biznesingizni raqamli transformatsiya qiling
+                FLOOD Solutions hoziroq hamkorlikni boshlang va samaradorligingizni oshiring
               </h2>
               <p>
-                Bizning xizmatlarimiz sizning biznesingizni raqamli transformatsiya qilishda yordam beradi. Zamonaviy vebsaytlar, mobil ilovalar, CRM va ERP tizimlari, AI va Telegram botlar yaratish, SEO va SMM xizmatlari, dizayn va boshqa xizmatlar.
+                Bizning xizmatlarimiz sizning biznesingizni raqamli transformatsiya qilishda yordam beradi. Zamonaviy vebsaytlar, mobil ilovalar, CRM va ERP tizimlari, AI va Telegram botlar — bularning barchasi bizning tajribali jamoamiz tomonidan ishlab chiqiladi.
               </p>
             </motion.div>
             <motion.div
