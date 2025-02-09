@@ -1,5 +1,6 @@
 import { IBlog, ICategory } from '@/types/blog';
 import {gql,request} from 'graphql-request';
+import { cache } from 'react';
 
 const graphqlAPI = process.env.NEXT_PUBLIC_HYGRAPH_ENDPOINT as string;
 
@@ -7,7 +8,7 @@ export const BlogService = {
     async getBlogs() {
         const query = gql`
             query GetAllBlogs {
-                blogs(last: 3) {
+                blogs{
                     excerpt
                     createdAt
                     slug
@@ -28,7 +29,7 @@ export const BlogService = {
                 }
             }
         `; 
-        const result = await request<{blogs:IBlog[]}>(graphqlAPI, query);
+        const result = await request<{blogs:IBlog[]}>(graphqlAPI, query, {}, { cache: "no-store" });
         return result.blogs;
     },
 
@@ -53,7 +54,7 @@ export const BlogService = {
             }
             }
         `;
-        const result = await request<{blogs:IBlog[]}>(graphqlAPI, query);
+        const result = await request<{blogs:IBlog[]}>(graphqlAPI, query, {}, { cache: "no-store" });
         return result.blogs;
     },
 
@@ -82,7 +83,7 @@ export const BlogService = {
             }
             }
         `;
-        const result = await request<{blog:IBlog}>(graphqlAPI, query,{slug});
+        const result = await request<{blog:IBlog}>(graphqlAPI, query,{slug},{ cache: "no-store" });
         return result.blog;
     },
     async getCategories(){
@@ -94,7 +95,7 @@ export const BlogService = {
         }
         }
         `;
-        const result = await request<{categories:ICategory[]}>(graphqlAPI, query);
+        const result = await request<{categories:ICategory[]}>(graphqlAPI, query, {}, { cache: "no-store" });
         return result.categories
     }
 }
