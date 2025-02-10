@@ -15,7 +15,7 @@ import Testimonial from "@/components/Testimonial";
 
 export const metadata: Metadata = {
   title: "Flood Solutions",
-  description: "This is Home for Solid Pro",
+  description: "We provide IT services, ERP, CRM, Telegram bot, websites, software development, business solutions, and odoo.",
   keywords: "IT services, ERP, CRM, Telegram bot, websites, software development, business solutions,odoo",
   // other metadata
 };
