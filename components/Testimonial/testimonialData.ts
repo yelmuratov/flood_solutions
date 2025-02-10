@@ -9,7 +9,7 @@ export const testimonialData: Testimonial[] = [
     designation: "Asoschi @DemoCompany",
     image: image1,
     content:
-      "FLOOD Solutions bizning ma'lumotlarimizni boshqarish tarzimizni tubdan o'zgartirdi. Ularning mobil ilovalar ishlab chiqish va samarali integratsiyalarni amalga oshirish bo'yicha tajribalari bizning tez o'sishimizga yordam berdi. Ularning jamoasi tezkor javob berish va muammolarni hal qilishda juda yaxshi, har doim ularga ishonch bilan murojaat qila olamiz.",
+      "FLOOD Solutions biz uchun zamonaviy veb-sayt va funksional Telegram bot ishlab chiqdi. Ularning innovatsion yondashuvi va sifatli yechimlari bizning biznes jarayonlarimizni optimallashtirishga yordam berdi. Ularning jamoasi tezkor va ishonchli, har doim yuqori sifatli xizmat ko'rsatishadi.",
   },
   {
     id: 2,

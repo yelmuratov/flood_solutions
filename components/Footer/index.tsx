@@ -46,12 +46,14 @@ const Footer = () => {
                 </a>
 
                 <p className="mb-10 mt-5">
-                  <a href="https://t.me/BahodirBuxoriy" target="_blank" rel="noopener noreferrer">
-                    Telegram:
-                    @BahodirBuxoriy
+                  <a href="https://t.me/Flood_Solutions_support" target="_blank" rel="noopener noreferrer">
+                    Telegram: @Flood_Solutions_support
+                  </a>
+                  <br />
+                  <a href="https://t.me/FLOOD_Solutions" target="_blank" rel="noopener noreferrer">
+                    Telegram: @FLOOD_Solutions
                   </a>
                 </p>
-
 
                 <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
                   Biz bilan aloqa
@@ -62,6 +64,7 @@ const Footer = () => {
                 >
                   +998 99 801 93 53
                 </a>
+
 
               </motion.div>
 
@@ -99,7 +102,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="#features"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Xizmatlar
@@ -107,7 +110,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="#testimonial"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Careers
@@ -115,7 +118,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/blog"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Blog
@@ -155,28 +158,21 @@ const Footer = () => {
                         Company
                       </a>
                     </li>
+
                     <li>
                       <a
-                        href="#"
+                        href="/blog"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Press media
+                        Bizning Blog
                       </a>
                     </li>
                     <li>
                       <a
-                        href="#"
+                        href="/support"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Our Blog
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Contact Us
+                        Biz bilan bog'laning
                       </a>
                     </li>
                   </ul>
@@ -280,7 +276,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary">
+                  <a href="/support" className="hover:text-primary">
                     Support
                   </a>
                 </li>
