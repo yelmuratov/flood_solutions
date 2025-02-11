@@ -115,18 +115,19 @@ const Hero: React.FC = () => {
                 />
                 <div className="relative aspect-[700/444] w-full">
                   <Image
-                    className="shadow-solid-l dark:hidden"
-                    src="/images/hero/hero-light.svg"
+                    className="shadow-solid-l dark:hidden rounded-xl"
+                    src="/images/hero/hero1.png"
                     alt="FLOOD Solutions"
                     fill
                   />
                   <Image
-                    className="hidden shadow-solid-l dark:block"
-                    src="/images/hero/hero-dark.svg"
+                    className="hidden shadow-solid-l dark:block rounded-xl"
+                    src="/images/hero/hero1.png"
                     alt="FLOOD Solutions"
                     fill
                   />
                 </div>
+
               </div>
             </div>
           </div>
