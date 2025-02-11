@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
       const result = await response.json();
 
       if (response.ok) {
-        setMessage("✅ Tabriklaymiz!Endi sizning email manzilingiz muvaffaqiyatli ro'yxatga olindi!");
+        setMessage("✅ Tabriklaymiz! Sizning email manzilingiz muvaffaqiyatli ro'yxatga olindi!");
         setEmail("");
       } else {
         setMessage(`❌ Xatolik: ${result.error}`);

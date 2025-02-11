@@ -14,8 +14,8 @@ const featuresTabData: FeatureTab[] = [
     title: "Innovatsion Mobil Ilovalar",
     desc1: `Biz iOS va Android platformalari uchun yuqori sifatli mobil ilovalarni ishlab chiqamiz.`,
     desc2: `Ilovalarimiz qulay interfeys, tezkor ishlash va keng funksiyalar bilan ajralib turadi.`,
-    image: "/images/features/1720.JPG",
-    imageDark: "/images/features/1720.JPG",
+    image: "/images/features/mobile.jpg",
+    imageDark: "/images/features/mobile.jpg",
   },
   {
     id: "tabThree",
