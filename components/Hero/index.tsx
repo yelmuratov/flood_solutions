@@ -1,12 +1,51 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, FormEvent } from "react";
 
-const Hero = () => {
-  const [email, setEmail] = useState("");
+const Hero: React.FC = () => {
+  const [phone, setPhone] = useState<string>("");
+  const [loading, setLoading] = useState<boolean>(false);
+  const [message, setMessage] = useState<string>("");
 
-  const handleSubmit = (e) => {
+  // Regex for phone number validation (Accepts numbers, can start with +)
+  const phoneRegex = /^[+]?[0-9]{9,15}$/;
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if (!phone.trim()) {
+      setMessage("❌ Iltimos, telefon raqamingizni kiriting!");
+      return;
+    }
+
+    if (!phoneRegex.test(phone)) {
+      setMessage("❌ Noto‘g‘ri telefon raqami! Iltimos, to‘g‘ri formatda kiriting.");
+      return;
+    }
+
+    setLoading(true);
+    setMessage("");
+
+    try {
+      const response = await fetch("/api/sendPhone", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ phone }),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setMessage("✅ Telefon raqami muvaffaqiyatli yuborildi!");
+        setPhone("");
+      } else {
+        setMessage(`❌ Xatolik: ${result.error}`);
+      }
+    } catch (error) {
+      setMessage("❌ Server bilan bog'liq xatolik!");
+    }
+
+    setLoading(false);
   };
 
   return (
@@ -30,21 +69,24 @@ const Hero = () => {
                 <form onSubmit={handleSubmit}>
                   <div className="flex flex-wrap gap-5">
                     <input
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
                       type="text"
                       placeholder="Telefon raqamingizni kiriting"
                       className="rounded-full border border-stroke px-6 py-2.5 shadow-solid-2 focus:border-primary focus:outline-none dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
+                      required
                     />
                     <button
+                      type="submit"
                       aria-label="Boshlash tugmasi"
                       className="flex rounded-full bg-black px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
+                      disabled={loading}
                     >
-                      Yuborish
+                      {loading ? "Yuborilmoqda..." : "Yuborish"}
                     </button>
                   </div>
                 </form>
-
+                {message && <p className="mt-3 text-black dark:text-white">{message}</p>}
               </div>
             </div>
 
