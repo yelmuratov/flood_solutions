@@ -7,6 +7,7 @@ const featuresData: Feature[] = [
     title: "Veb-sayt va CRM tizimlari",
     description:
       "Biznesingizni avtomatlashtirish uchun yuqori sifatli veb-saytlar va CRM tizimlarini ishlab chiqamiz.",
+    blurDataURL: "/images/placeholder.jpg",
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ const featuresData: Feature[] = [
     title: "Mobil ilovalar",
     description:
       "FLOOD Solutions jamoasi tomonidan iOS va Android uchun tezkor va samarali ilovalar ishlab chiqiladi.",
+    blurDataURL: "/images/placeholder.jpg",
   },
   {
     id: 3,
@@ -21,6 +23,7 @@ const featuresData: Feature[] = [
     title: "ERP tizimlari",
     description:
       "Korxonangizni raqamli transformatsiya qilish uchun maxsus ERP tizimlarini yaratamiz.",
+    blurDataURL: "/images/placeholder.jpg",
   },
   {
     id: 4,
@@ -28,6 +31,7 @@ const featuresData: Feature[] = [
     title: "AI va Telegram botlar",
     description:
       "Biznes jarayonlarini avtomatlashtirish va foydalanuvchilarga qulaylik yaratish uchun AI va botlarni ishlab chiqamiz.",
+    blurDataURL: "/images/placeholder.jpg",
   },
   {
     id: 5,
@@ -35,6 +39,7 @@ const featuresData: Feature[] = [
     title: "To‘lov tizimlari integratsiyasi",
     description:
       "Stripe, Payme, Click kabi to‘lov tizimlarini loyihalaringizga muammosiz integratsiya qilamiz.",
+    blurDataURL: "/images/placeholder.jpg",
   },
   {
     id: 6,
@@ -42,6 +47,7 @@ const featuresData: Feature[] = [
     title: "Doimiy texnik qo‘llab-quvvatlash",
     description:
       "Biz mijozlarimizga xizmat ko‘rsatish sifatini doimiy ravishda ta’minlash uchun texnik yordamni taklif qilamiz.",
+    blurDataURL: "/images/placeholder.jpg",
   },
 ];
 

@@ -8,6 +8,7 @@ const featuresTabData: FeatureTab[] = [
     desc2: `Biz mijozlar ehtiyojlariga moslashgan, tezkor va samarali ishlovchi vebsaytlarni yaratamiz.`,
     image: "/images/features/website.jpg",
     imageDark: "/images/features/website.jpg",
+    blurDataURL: "/images/placeholder.jpg",
   },
   {
     id: "tabTwo",
@@ -16,6 +17,7 @@ const featuresTabData: FeatureTab[] = [
     desc2: `Ilovalarimiz qulay interfeys, tezkor ishlash va keng funksiyalar bilan ajralib turadi.`,
     image: "/images/features/mobile.jpg",
     imageDark: "/images/features/mobile.jpg",
+    blurDataURL: "/images/placeholder.jpg",
   },
   {
     id: "tabThree",
@@ -24,6 +26,7 @@ const featuresTabData: FeatureTab[] = [
     desc2: `Bizning yechimlar mijozlar bilan ishlash, resurslarni boshqarish va samaradorlikni oshirishga yordam beradi.`,
     image: "/images/features/erp.jpg",
     imageDark: "/images/features/erp.jpg",
+    blurDataURL: "/images/placeholder.jpg",
   },
   {
     id: "tabFour",
@@ -32,6 +35,7 @@ const featuresTabData: FeatureTab[] = [
     desc2: `Biz sun’iy intellekt asosida ishlovchi chatbotlar va avtomatlashtirilgan tizimlarni yaratamiz.`,
     image: "/images/features/ai.jpg",
     imageDark: "/images/features/ai.jpg",
+    blurDataURL: "/images/placeholder.jpg",
   },
 ];
 
