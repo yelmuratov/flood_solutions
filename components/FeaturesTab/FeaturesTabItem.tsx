@@ -20,7 +20,7 @@ const FeaturesTabItem = ({ featureTab }: { featureTab: FeatureTab }) => {
             src={image}
             alt={title}
             fill
-            className="dark:hidden"
+            className="rounded-xl shadow-lg dark:hidden" // Border radius qo‘shildi
             priority
             placeholder="blur"
             blurDataURL="/images/placeholder.jpg"
@@ -29,7 +29,7 @@ const FeaturesTabItem = ({ featureTab }: { featureTab: FeatureTab }) => {
             src={imageDark}
             alt={title}
             fill
-            className="hidden dark:block"
+            className="hidden rounded-xl shadow-lg dark:block" // Border radius qo‘shildi
             priority
             placeholder="blur"
             blurDataURL="/images/placeholder.jpg"
